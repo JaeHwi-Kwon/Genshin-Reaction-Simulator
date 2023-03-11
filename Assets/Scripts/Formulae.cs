@@ -8,4 +8,14 @@ public static class Formulae
     {
         return 0.0f;
     }
+
+    public static float Decay()
+    {
+        return 0.0f;
+    }
+
+    public static float Duratation(float GaugeUnit)
+    {
+        return 2.5f * GaugeUnit + 7.0f;
+    }
 }
