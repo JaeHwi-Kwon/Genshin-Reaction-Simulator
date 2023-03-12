@@ -60,6 +60,8 @@
     <Compile Include="Assets\Scripts\GaugeBar.cs" />
     <Compile Include="Assets\Scripts\Formulae.cs" />
     <Compile Include="Assets\Scripts\Elemental_Applier.cs" />
+    <Compile Include="Assets\Scripts\Element_changer.cs" />
+    <Compile Include="Assets\Scripts\ElementController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

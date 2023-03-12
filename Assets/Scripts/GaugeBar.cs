@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,9 +13,11 @@ public class GaugeBar : MonoBehaviour
     private float fade_duration = 0f;
     private float apply_timer = 0f;
     private bool isApplied = false;
+    public Image fill_area;
     public void Start()
     {
         slider = GetComponent<Slider>();
+        slider.value = 0.0f;
     }
     // FixedUpdate is called once per frame in 60fps circumstances
     public void FixedUpdate()
@@ -37,5 +40,10 @@ public class GaugeBar : MonoBehaviour
         duration = Formulae.Duratation(GaugeUnit);
         slider.value = GaugeUnit * Constants.AURA_TAX;
         fade_duration = slider.value / duration;
+    }
+
+    public void ElementChanged(Color elemental_color)
+    {
+        fill_area.color = elemental_color;
     }
 }

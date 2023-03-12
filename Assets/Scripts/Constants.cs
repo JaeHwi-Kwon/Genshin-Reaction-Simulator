@@ -36,4 +36,13 @@ public static class Constants
     public static readonly Color ANEMO      = new Color(117 / 255f, 195 / 255f, 170 / 255f);
     public static readonly Color GEO        = new Color(250 / 255f, 183 / 255f, 046 / 255f);
     public static readonly Color DENDRO     = new Color(166 / 255f, 501 / 255f, 056 / 255f);
+
+    public static readonly Color[] Elements_Color = 
+        new Color[] {   new Color(160 / 255f, 215 / 255f, 228 / 255f),
+                        new Color(239 / 255f, 122 / 255f, 053 / 255f),
+                        new Color(176 / 255f, 143 / 255f, 194 / 255f),
+                        new Color(075 / 255f, 195 / 255f, 241 / 255f),
+                        new Color(117 / 255f, 195 / 255f, 170 / 255f),
+                        new Color(250 / 255f, 183 / 255f, 046 / 255f),
+                        new Color(166 / 255f, 501 / 255f, 056 / 255f)};
 }
